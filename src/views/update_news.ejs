@@ -1,0 +1,32 @@
+ <%include ./admin_index%>
+ 
+ <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header d-flex align-items-center">
+                  <h4>Update a News</h4>
+                </div>
+                <div class="card-body">
+                  <p>Update a News to the News Section</p>
+                  <form action="news/update" method="GET">
+                    <div class="form-group">
+                      <label>Heading</label>
+                      <input type="text" placeholder="News Heading" name="heading" value="<%=single.heading%>" class="form-control">
+                    </div>
+                    <div class="form-group">       
+                     <label>Short Description</label>
+                      <input type="text" placeholder="News Short Description" name="short_desc" value="<%=single.short_desc%>" class="form-control">
+                    </div>
+                    <div class="form-group">       
+                     <label>Long Description</label>
+                      <input type="text" placeholder="News Long Description" name="long_desc" value="<%=single.long_desc%>" class="form-control">
+                    </div>
+                    <div class="form-group">       
+                      <input type="submit" value="Update" class="btn btn-primary">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+ <%include ./footer%>
+ 
